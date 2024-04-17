@@ -1,0 +1,19 @@
+Database Handling
+- Configure the database in .env. For beginners configuring the DB is a must. Then for advance configuration users are also needed to  be  modified
+
+>>>> Model
+    - data structure of your application
+    - It typically interacts with the database to perform CRUD (Create, Read, Update, Delete) operations on the data
+    - models are responsible for managing the data logic of your application, querying and manipulating that data
+    - `$fillable` property specifies which attributes of the model are mass assignable, meaning they can be filled via mass assignment
+    enable you to define relationships between different types of data, such as one-to-one, one-to-many, or many-to-many relationships, using Laravel's Eloquent ORM
+
+How to create and use
+1. Run command `php artisan make:model {ModelName} -m`
+    - create a  model class(App\Http)
+    - -m option will create a corresponding migration file along with the model. 
+
+>>>> Migration
+    - place at (database\migrations)
+    - A migration file is used to define the structure of a database table. Laravel's migration system allows you to version control your database schema and easily
+
